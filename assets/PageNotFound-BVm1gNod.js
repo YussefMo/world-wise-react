@@ -1,1 +1,0 @@
-import{j as o}from"./index-DKoDxsOV.js";import{P as n}from"./PageNav-BseZfTqD.js";import"./Logo-dYiQn3ej.js";const t="_pagenotfound_dtq37_1",s={pagenotfound:t};function r(){return o.jsxs("div",{className:s.pagenotfound,children:[o.jsx(n,{}),o.jsx("span",{children:o.jsx("h1",{children:"Page not found 😢"})})]})}export{r as default};
