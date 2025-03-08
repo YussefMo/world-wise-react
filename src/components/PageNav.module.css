@@ -56,11 +56,13 @@
 @media screen and (max-width: 900px) {
   .nav{
     position: fixed;
+    width: 50%;
     left: 3rem;
     display: flex;
     flex-flow: column wrap;
   }
   .nav div{
+    border: solid;
     padding: 4rem;
     background-color: var(--color-dark--1);
   }
