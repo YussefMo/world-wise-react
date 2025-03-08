@@ -76,7 +76,7 @@ function Form() {
       }
     }
     await addCity(newCity)
-    navigate('/app/cities')
+    navigate('/world-wise-react/app/cities')
   }
 
   if (isLoadingForm) {
