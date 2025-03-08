@@ -28,18 +28,18 @@ function App() {
           <BrowserRouter>
             <Suspense fallback={<SpinnerFullPage />}>
               <Routes>
-                <Route path="/world-wise-react" element={<HomePage />} />
-                <Route path="/product" element={<Product />} />
-                <Route path="/pricing" element={<Pricing />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="app" element={<RestrictedRout><AppLayout /></RestrictedRout>}>
-                  <Route index element={<Navigate replace to='cities' />} />
-                  <Route path="cities" element={<CityList />} />
-                  <Route path="cities/:id" element={<City />} />
-                  <Route path="countries" element={<CountryList />} />
-                  <Route path="form" element={<Form />} />
-                </Route>
-                <Route path="*" element={<PageNotFound />} />
+                <Route path="/world-wise-react/" element={<HomePage />} />
+                  <Route path="/world-wise-react/product" element={<Product />} />
+                  <Route path="/world-wise-react/pricing" element={<Pricing />} />
+                  <Route path="/world-wise-react/login" element={<Login />} />
+                  <Route path="/world-wise-react/app" element={<RestrictedRout><AppLayout /></RestrictedRout>}>
+                  <Route index element={<Navigate replace to="cities" />} />
+                    <Route path="cities" element={<CityList />} />
+                    <Route path="cities/:id" element={<City />} />
+                    <Route path="countries" element={<CountryList />} />
+                    <Route path="form" element={<Form />} />
+                  </Route>
+                <Route path="world-wise-react/*" element={<PageNotFound />} />
               </Routes>
             </Suspense>
           </BrowserRouter>

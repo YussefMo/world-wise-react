@@ -22,7 +22,7 @@ export default function Login() {
 
   useEffect(function () {
     if (isLogedin) {
-      navigate("/app", {replace : true});
+      navigate("/world-wise-react/app", {replace : true});
       return;
     }
   }, [isLogedin, navigate])

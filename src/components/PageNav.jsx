@@ -13,9 +13,9 @@ function PageNav() {
             <nav className={styles.nav}>
                 <Logo />
                 <ul>
-                    <li><NavLink to='/pricing'>Pricing</NavLink></li>
-                    <li><NavLink to='/product'>Product</NavLink></li>
-                    <li><NavLink to='/login' className={styles.ctaLink}>Log In</NavLink></li>
+                    <li><NavLink to='/world-wise-react/pricing'>Pricing</NavLink></li>
+                    <li><NavLink to='/world-wise-react/product'>Product</NavLink></li>
+                    <li><NavLink to='/world-wise-react/login' className={styles.ctaLink}>Log In</NavLink></li>
                 </ul>
             </nav>
         )
@@ -33,9 +33,9 @@ function PageNav() {
                         <div>
                             <Logo />
                             <ul>
-                                <li><NavLink to='/pricing'>Pricing</NavLink></li>
-                                <li><NavLink to='/product'>Product</NavLink></li>
-                                <li><NavLink to='/login' className={styles.ctaLink}>Log In</NavLink></li>
+                                <li><NavLink to='/world-wise-react/pricing'>Pricing</NavLink></li>
+                                <li><NavLink to='/world-wise-react/product'>Product</NavLink></li>
+                                <li><NavLink to='/world-wise-react/login' className={styles.ctaLink}>Log In</NavLink></li>
                             </ul>
                         </div>
                     </nav>

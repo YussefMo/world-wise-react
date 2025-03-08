@@ -14,7 +14,7 @@ function User() {
   function handleClick(e) {
     e.preventDefault();
     logout();
-    navigate("/login");
+    navigate("/world-wise-react/login");
   }
   if (width > breakpoint) {
     return (
