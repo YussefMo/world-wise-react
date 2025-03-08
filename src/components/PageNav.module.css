@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav img {
+  height: 4rem;
+}
+
+.nav ul li a:global(.active):hover {
+  color: var(--color-brand--2);
+}
+
+.nav ul li a:hover {
+  color: var(--color-light--1);
+}
+
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: var(--color-light--2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* CSS Modules feature */
+.nav ul li a:global(.active) {
+  color: var(--color-brand--2);
+  border-bottom: solid 2px;
+}
+
+.nav ul li a:global(.active.cta) {
+  color: var(--color-dark--0);
+}
+
+
+.nav a.ctaLink:link,
+.nav a.ctaLink:visited,
+.nav ul li a.ctaLink:hover {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav{
+    position: fixed;
+    left: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .nav div{
+    padding: 4rem;
+    background-color: var(--color-dark--1);
+  }
+  .nav ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
