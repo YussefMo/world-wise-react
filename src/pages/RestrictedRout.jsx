@@ -8,7 +8,7 @@ function RestrictedRout({ children }) {
 
     useEffect(function () {
         if (!isLogedin) {
-            navigate("/login")
+            navigate("/world-wise-react/login")
         }
     }, [isLogedin, navigate])
     
